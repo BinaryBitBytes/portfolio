@@ -4,8 +4,8 @@ import { skills } from '../../Data/skills.js'
 
 export default function Skills() {
     return(
-        <section id='skills'>
-            <div className='container px-5 py-10 mx-auto'>
+        <section id='skills' >
+            <div className='container px-5 py-10 mx-auto ' class="bg-center bg-auto bg-[url('https://images.newscientist.com/wp-content/uploads/2021/09/01154236/PRI_197379901.jpg')]">
                 <div className='text-center mb-20'>
                     <ChipIcon className='w-10 inline-block mb-4' />
                     <h1 className='sm:text-4x1 text-3x1 font-medium title-font text-white mb-4'>

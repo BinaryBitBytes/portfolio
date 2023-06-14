@@ -10,7 +10,7 @@ import '../src/input.css';
 
 function App() {
   return (
-    <main>
+    <main >
       <Navbar className='text-gray-400 bg-green-900 body-font' />
       <About />
       <Projects />
