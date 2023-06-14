@@ -13,7 +13,7 @@ export default function Projects() {
                     </h1>
                     <p className='lg:w-2/3 mx-auto leading-relaxed text-base'>
                         The apps I built are as follows:
-                        <li>
+                        <li className='border-2 border-indigo-600'>
                             <ol>ReadMe Generator- JQuery / NodeJS</ol>
                             <ol>Password Generator- HTML / Javascript</ol>
                             <ol>Sunshine Places Recommendation App- Javascript / HTML / Bootstrap / API</ol>
@@ -25,7 +25,7 @@ export default function Projects() {
                         <a
                         href={project.link}
                         key={project.image}
-                        className='sm:w-1/2 w-100 p-4'>
+                        className='sm:w-1/2 w-100 p-4 flex flex-wrap -m-4 border-3 border-indigo-600 rounded-full'>
                         <div className='flex relative'>
                             <img
                             alt='gallery'
