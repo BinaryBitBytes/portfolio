@@ -1,6 +1,3 @@
-
-// export function skills() {
-//     return([
 export const skills = [
         'HTML5', 'CSS3', 'MYSQL',
         'JavaScript', 'MongoDB', 'GraphQL',
@@ -13,5 +10,4 @@ export const skills = [
         'Arduino', 'Docker', 'RaspberriPi', 'Lua', 'Assembly', 'Mocha.js',
         'Ubiquiti', 'Cisco'
 ]
-//     ])
-// }
+

@@ -14,9 +14,9 @@ export default function Projects() {
                     <p className='lg:w-2/3 mx-auto leading-relaxed text-base'>
                         The apps I built are as follows:
                         <li>
-                            <ol>JQuery / NodeJS- ReadMe Generator</ol>
-                            <ol>HTML / Javascript- Password Generator</ol>
-                            <ol>Javascript / HTML / Bootstrap / API- Sunshine Places Recommendation Application</ol>
+                            <ol>ReadMe Generator- JQuery / NodeJS</ol>
+                            <ol>Password Generator- HTML / Javascript</ol>
+                            <ol>Sunshine Places Recommendation App- Javascript / HTML / Bootstrap / API</ol>
                         </li>
                     </p>
                 </div>
@@ -32,7 +32,7 @@ export default function Projects() {
                             className='absolute inset-0 w-full object-cover object-center'
                             src={project.image}
                             />
-                            <div className='px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg0gray-900 opacity-0 hover:opacity-100'>
+                            <div className='px-10 py-10 relative z-10 w-full border-4 border-gray-800 bg0gray-900 opacity-0 hover:opacity-100'>
                                 <h2 className='tracking-widest text-sm title-font font-medium text-green-400 mb-1'>
                                     {project.subtitle}
                                 </h2>

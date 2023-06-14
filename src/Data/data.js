@@ -4,14 +4,14 @@ export const projects = [
         title: 'ReadMe_Gen' ,
         subtitle: 'JQuery, Javascript, & NodeJS' ,
         description: 'A readme generator template that will make generating a professional looking readme simply and easily by following prompts in node.js.',
-        image: '../public/ProjectImages/ReadMeGen.gif' ,
+        image: '../../../portfolio/public/ProjectImages/passwordGenImg.png',
         link: 'https://github.com/BinaryBitBytes/ReadMe_Gen',
     },
     {
         title: 'Password-Generator',
         subtitle: 'HTML, CSS, & Javascript' ,
         description: 'This is a basic password generator. Enjoy!',
-        image: '../public/ProjectImages/passwordGenImg.png',
+        image: '../public/ProjectImages/passwordGenImg.jpg',
         link: 'https://binarybitbytes.github.io/Password-Generator/',
     },
     {
