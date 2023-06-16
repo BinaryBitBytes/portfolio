@@ -1,14 +1,14 @@
-function OutlineBox(){
+// function OutlineBox(){
     
-}
-function Name(){
-    return<Name></Name>
-}
+// }
+// function Name(){
+//     return<Name></Name>
+// }
 
-function Header(){
-    return Name();
-}
+// function Header(){
+//     return Name();
+// }
 
-export default function _HEADER() {
-  return <Header></Header>;
-}
+// export default function _HEADER() {
+//   return <Header></Header>;
+// }

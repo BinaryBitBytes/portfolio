@@ -39,12 +39,12 @@ export default function Contact() {
                     style={{ filter: 'opacity(0.6' }}
                     src='https://www.google.com/maps/embed/v1/place?q=Lillian+Dr,+Newnan,+GA+30265,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8'
                     />
-                    <div className='bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md'>
+                    <div className='bg-gray-900 relative flex flex-initial py-7 px-7 rounded shadow-md'>
                         <div className='lg:w-1/2 px-6'>
                             <h2 className='title-font font-semibold text-white tracking-widest text-xs'>
                                 ADDRESS
                             </h2>
-                            <p className='mt-1'>
+                            <p className='text-red-400 tracking-widest text-xs mt-1'>
                                 10 Lillian Dr. <br />
                                 Newnan, GA 30265
                             </p>
@@ -53,13 +53,13 @@ export default function Contact() {
                             <h2 className='title-font font-semibold text-white tracking-widest text-xs'>
                                 EMAIL
                             </h2>
-                            <a className='text-indigo-400 leading-relaxed' href='email-address'>
+                            <a className='text-indigo-400 leading-relaxed tracking-widest text-xs' href='email-address'>
                                 117MWC117@GMAIL.COM
                             </a>
                             <h2 className='title-font font-semibold text-white tracking-widest text-xs mt-4'>
                                 PHONE
                             </h2>
-                            <p className='leading-relaxed'>678-675-6882</p>
+                            <p className='text-indigo-400 leading-relaxed tracking-widest text-xs'>678-675-6882</p>
                         </div>
                     </div>
                 </div>

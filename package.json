@@ -38,6 +38,8 @@
     ]
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.9",
+    "react-reveal-text": "^0.1.1",
     "tailwindcss": "^3.3.2"
   }
 }
