@@ -1,3 +1,4 @@
+
 import { CodeIcon } from '@heroicons/react/solid'
 import React from 'react'
 import { projects } from '../../../Data/data.js'
@@ -24,12 +25,12 @@ export default function Projects() {
                     {projects.map((project) => (
                         <a
                         href={project.link}
-                        key={project.image}
+                        key={project.key}
                         className='sm:w-1/2 w-100 p-4 flex flex-wrap -m-4 border-3 border-indigo-600 rounded-full'>
-                        <div className='flex relative'>
+                        <div className='flex relative '>
                             <img
                             alt='gallery'
-                            className='absolute inset-0 w-full object-cover object-center'
+                            className='absolute inset-0 h-full w-full object-cover object-center'
                             src={project.image}
                             />
                             <div className='px-10 py-10 relative z-10 w-full border-4 border-gray-800 bg0gray-900 opacity-0 hover:opacity-100'>
