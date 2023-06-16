@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowRightIcon } from '@heroicons/react/solid'
+import Name from "./name";
 
 export default function Navbar() {
     return (
@@ -8,7 +9,7 @@ export default function Navbar() {
             <a className="title-font font-medium text-white mb-4 md:mb-0"
               href='Navigation Bar'>
               <a href="#about" className="ml-3 text-xl">
-                Miles Colon
+                <Name />
               </a>
             </a>
             <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700 flex flex-wrap items-center text-base justify-center">
