@@ -6,6 +6,8 @@
     "node": "^16.13.0"
   },
   "dependencies": {
+    "tailwindcss": "^3.3.2",
+    "@tailwindcss/typography": "^0.5.9",
     "@heroicons/react": "^1.0.6",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
