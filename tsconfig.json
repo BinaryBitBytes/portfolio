@@ -11,6 +11,11 @@
         "*": ["src/*"]
       }
     },
-    "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.js", "src/**/*.jsx", "node_modules/react-reveal-text/src/index.js"]
+    "include": [
+      "**/*",
+      "./src/"
+  ],
+    "exclude": ["node_modules", "build", "test"]
+
 }
   
