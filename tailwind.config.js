@@ -1,4 +1,4 @@
-const typography = require('@tailwindcss/typography');
+// const typography = require('@tailwindcss/typography');
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js}"],
@@ -11,7 +11,7 @@ module.exports = {
     },
   },
   plugins: [
-    require('@tailwindcss/typography'),
+    // require('@tailwindcss/typography'),
     require('tailwindcss'),
   ],
 }
