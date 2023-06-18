@@ -5,10 +5,11 @@
 //     )
 // }
 
-export const testimonials = [{
-    quote: 'I am quoting myself',
-    image: '../../public/coding.png',
-    name: 'Miles C. - Test Testimonial',
-    company:'Apex Aerospace LLC.'
-}
+export const testimonials = [
+    {
+        quote: 'I am quoting myself',
+        image: '../../public/coding.png',
+        name: 'Miles C. - Test Testimonial',
+        company:'Apex Aerospace LLC.'
+    }
 ]
