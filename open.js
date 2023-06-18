@@ -1,4 +1,4 @@
-const open = require('open');
+import open from 'open';
 
 // Open a URL in the default browser
 open('https://example.com');
