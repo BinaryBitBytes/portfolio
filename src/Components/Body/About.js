@@ -5,7 +5,7 @@ export default function About() {
         <div 
         className='container mx-auto flex px-3 py-3 md:flex-row flex-col items-center ' 
         class="bg-center bg-cover bg-[url('https://cosmosmagazine.com/wp-content/uploads/2020/02/190613_atoms_full-1440x813.jpg')]"
-        alt='background-AboutMe'>
+        alt='background-AboutMe'> 
             {/* <div className='center-content flex items-center lg:flex-grow md:q-1/2 lg:pr-44 md:pr-16 flex flex-col md:items-start md:text-center mb-16 md:mb-0 items-center text-center'> */}
             <div className='center-content items-center'>
                 <div>
