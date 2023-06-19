@@ -18,7 +18,7 @@ class Name extends React.Component {
       return (
         <div style={{ 
             fontFamily: 'fantasy',
-            border: '5px double indigo', padding: '12px',
+            border: '5px double indigo', padding: '38 px',
             textAlign: 'center', color: "tomato", 
             fontSize: "32px", lineHeight: "36px"}}>
           <h1>
