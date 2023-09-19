@@ -1,5 +1,5 @@
 {
-  "homepage": ".",
+  "homepage": "https://binarybitbytes.github.com/portfolio",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -55,6 +55,7 @@
   "devDependencies": {
     "@tailwindcss/typography": "github:tailwindcss/typography",
     "@types/babel__core": "^7.20.1",
+    "gh-pages": "^6.0.0",
     "tailwindcss": "^3.3.2",
     "typescript": "^4.9.5"
   }
