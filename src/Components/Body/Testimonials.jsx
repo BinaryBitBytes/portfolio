@@ -1,6 +1,7 @@
 import React from "react";
 import { TerminalIcon, UsersIcon } from "@heroicons/react/solid";
 import { testimonials } from "../../Data/testimonials.js";
+
 export default function Testimonials() {
   return (
     <section id="testimonials">
@@ -9,18 +10,16 @@ export default function Testimonials() {
         <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-12">
           Client Testimonials
         </h1>
-        <div className=" container px-5 py-10 mx-auto flex flex-wrap m-4">
+        <div className="container px-5 py-10 mx-auto flex flex-wrap m-4">
           {testimonials.map((testimonial) => (
-            <div className="p-4 md:w-1/2 w-full">
+            <div key={testimonial.id} className="p-4 md:w-1/2 w-full">
               <div className="h-full bg-rose-900 bg-opacity-40 p-8 rounded">
                 <TerminalIcon className="block w-8 text-gray-500 mb-4" />
-                <strong>
-                  <p className="leading-relaxed mb-6">{testimonial.quote}</p>
-                </strong>
+                <p className="leading-relaxed mb-6">{testimonial.quote}</p>
                 <div className="inline-flex items-center">
                   <img
-                    alt="testimonial"
-                    className="bg-cover w-12 h-64 w-64 rounded-full flex-shrink-0 object-cover object-center"
+                    alt={testimonial.name}
+                    className="w-16 h-16 rounded-full flex-shrink-0 object-cover object-center"
                     src={testimonial.image}
                   />
                   <span className="flex-grow flex flex-col pl-4">

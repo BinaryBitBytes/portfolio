@@ -6,8 +6,8 @@ export default function Skills() {
   return (
     <section id="skills">
       <div
-        className="container px-5 py-10 mx-auto "
-        class="bg-center bg-cover bg-[url('https://images.newscientist.com/wp-content/uploads/2021/09/01154236/PRI_197379901.jpg')]"
+        id="container px-5 py-10 mx-auto "
+        className="bg-center bg-cover bg-[url('https://images.newscientist.com/wp-content/uploads/2021/09/01154236/PRI_197379901.jpg')]"
       >
         <div className="text-center mb-20">
           <ChipIcon className="w-10 inline-block mb-4 text-neutral-500" />

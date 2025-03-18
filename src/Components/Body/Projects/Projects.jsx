@@ -11,7 +11,7 @@ export default function Projects() {
           <h1 className="sm:text-4x1 text-3x1 font-medium title-font mb-4 text-white">
             Here are some Web Applications I have built
           </h1>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+          <section className="lg:w-2/3 mx-auto leading-relaxed text-base">
             The apps I built are as follows:
             <li className="border-2 border-indigo-600">
               <ol>ReadMe Generator- JQuery / NodeJS</ol>
@@ -22,7 +22,7 @@ export default function Projects() {
               </ol>
               <br></br>
             </li>
-          </p>
+          </section>
         </div>
         <div className="flex flex-wrap -m-4">
           {projects.map((project) => (
