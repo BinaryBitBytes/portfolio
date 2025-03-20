@@ -1,5 +1,9 @@
-import React from "react";
-export default function About() {
+import React from 'react';
+import WHOamI from './Elements/About/whoAmI';
+import welcome from './Elements/About/welcome';
+let welcomeElement = welcome;
+let WHOamIELEMENT = WHOamI;
+function About() {
   return (
     <section id="about">
       <div
@@ -10,7 +14,8 @@ export default function About() {
         {/* <div className='center-content flex items-center lg:flex-grow md:q-1/2 lg:pr-44 md:pr-16 flex flex-col md:items-start md:text-center mb-16 md:mb-0 items-center text-center'> */}
         <div className="center-content items-center">
           <div className=" box-border container rounded-full border-4 box-border h-12 w-55 border-indigo-800 mx-auto py-0 mb-16">
-            <div
+            <welcomeElement />
+            {/* <div
               id="box-content flex py-4 title-font sm:text-4x1 text 3x1 md-1 font-medium"
               className="hover:bg-sky-800/[.5] hover:uppercase font-extrabold text-emerald-700 text-center self-center place-content-center"
             >
@@ -19,7 +24,9 @@ export default function About() {
                 programming, especially building web applications and unit
                 tests.
               </h1>
-              <div className="container mx-auto px-auto py-7 text-center absolute inset-x-0 bottom-80 h-16">
+            </div> */}
+            <WHOamIELEMENT />
+            {/* <div className="container mx-auto px-auto py-7 text-center absolute inset-x-0 bottom-80 h-16">
                 <div className="rounded-full border-4 border-indigo-800 leading-relaxed bg-emerald-800 font-large md-8 text-rose-300">
                   <h4>
                     <div className="text-5xl absolute inset-y-7 left-48 w-28">
@@ -40,8 +47,7 @@ export default function About() {
                     </div>
                   </h4>
                 </div>
-              </div>
-            </div>
+              </div> */}
           </div>
           <br></br>
           <div className="place-content-end h-72 content-between-20 ">
@@ -77,3 +83,5 @@ export default function About() {
     </section>
   );
 }
+
+export default About;

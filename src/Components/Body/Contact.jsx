@@ -1,27 +1,24 @@
-import React from "react";
-
-export default function Contact() {
-  const { name, setName } = React.useState("");
-  const { email, setEmail } = React.useState("");
-  const { message, setMessage } = React.useState("");
+import React from 'react';
+function Contact() {
+  const { name, setName } = React.useState('');
+  const { email, setEmail } = React.useState('');
+  const { message, setMessage } = React.useState('');
 
   function encode(data) {
     return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
+      .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+      .join('&');
   }
 
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", name, email, message }),
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'contact', name, email, message }),
     })
-      .then(() => alert("Message was sent!"))
-      .catch((error) => alert(error));
+      .then(() => alert('Message was sent!'))
+      .catch(error => alert(error));
   }
 
   return (
@@ -36,7 +33,7 @@ export default function Contact() {
             frameBorder={0}
             marginHeight={0}
             marginWidth={0}
-            style={{ filter: "opacity(0.6" }}
+            style={{ filter: 'opacity(0.6' }}
             src="https://www.google.com/maps/embed/v1/place?q=Newnan,+GA+30265,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
           />
           <div className="bg-gray-900 relative flex flex-initial py-7 px-7 rounded shadow-md">
@@ -92,7 +89,7 @@ export default function Contact() {
               id="name"
               name="name"
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-              onChange={(e) => setName(e.target.value)}
+              onChange={e => setName(e.target.value)}
             />
           </div>
           <div className="relative mb-4">
@@ -104,7 +101,7 @@ export default function Contact() {
               id="email"
               name="email"
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-              onChange={(e) => setEmail(e.target.value)}
+              onChange={e => setEmail(e.target.value)}
             />
           </div>
           <div className="relative mb-4">
@@ -118,7 +115,7 @@ export default function Contact() {
               id="message"
               name="message"
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-              onChange={(e) => setMessage(e.target.value)}
+              onChange={e => setMessage(e.target.value)}
             />
           </div>
           <button
@@ -132,3 +129,4 @@ export default function Contact() {
     </section>
   );
 }
+export default Contact;
