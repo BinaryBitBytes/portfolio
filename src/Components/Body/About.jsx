@@ -1,7 +1,8 @@
 import React from 'react';
 import WHOamI from './Elements/About/whoAmI';
-import welcome from './Elements/About/welcome';
-let welcomeElement = welcome;
+import Welcome from './Elements/About/welcome';
+import MyContact from './Elements/About/MyContact';
+let WelcomeElement = Welcome;
 let WHOamIELEMENT = WHOamI;
 function About() {
   return (
@@ -14,7 +15,7 @@ function About() {
         {/* <div className='center-content flex items-center lg:flex-grow md:q-1/2 lg:pr-44 md:pr-16 flex flex-col md:items-start md:text-center mb-16 md:mb-0 items-center text-center'> */}
         <div className="center-content items-center">
           <div className=" box-border container rounded-full border-4 box-border h-12 w-55 border-indigo-800 mx-auto py-0 mb-16">
-            <welcomeElement />
+            <WelcomeElement />
             {/* <div
               id="box-content flex py-4 title-font sm:text-4x1 text 3x1 md-1 font-medium"
               className="hover:bg-sky-800/[.5] hover:uppercase font-extrabold text-emerald-700 text-center self-center place-content-center"
@@ -49,8 +50,8 @@ function About() {
                 </div>
               </div> */}
           </div>
-          <br></br>
-          <div className="place-content-end h-72 content-between-20 ">
+          <MyContact />
+          {/* <div className="place-content-end h-72 content-between-20 ">
             <div className="flex justify-center">
               <a
                 href="#contact"
@@ -77,7 +78,7 @@ function About() {
                 <strong>Checkout my hard work & projects</strong>
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

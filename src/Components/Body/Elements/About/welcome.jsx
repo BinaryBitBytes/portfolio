@@ -1,4 +1,4 @@
-function welcome() {
+function Welcome() {
   return (
     <div
       id="box-content flex py-4 title-font sm:text-4x1 text 3x1 md-1 font-medium"
@@ -12,4 +12,4 @@ function welcome() {
   );
 }
 
-export default welcome;
+export default Welcome;

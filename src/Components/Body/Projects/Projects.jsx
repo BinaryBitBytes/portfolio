@@ -1,14 +1,18 @@
 import { CodeIcon } from '@heroicons/react/solid';
 import React from 'react';
 import { projects } from '../../../Data/collection/data.js';
+import ProjectsList from './ProjectsList';
 
 function Projects() {
   return (
     <section id="projects" className="text-gray-400 bg-gray-900 body-font">
-      <div className="container px-5 py-10 mx-auto text-center lg:px-40">
-        <div className="flex flex-col w-full mb-20">
+      <div className="flex flex-col w-full mb-20">
+        <div className="container px-5 py-10 mx-auto text-center lg:px-40">
           <CodeIcon className="mx-auto inline-block w-10 mmb-4 text-red-500" />
-          <h1 className="sm:text-4x1 text-3x1 font-medium title-font mb-4 text-white">
+          <ProjectsList />
+          {/* //? Local Secion- JSX ELEMENT > CONVERT
+         // //?  */}
+          {/* <h1 className="sm:text-4x1 text-3x1 font-medium title-font mb-4 text-white">
             Here are some Web Applications I have built
           </h1>
           <section className="lg:w-2/3 mx-auto leading-relaxed text-base">
@@ -17,12 +21,13 @@ function Projects() {
               <ol>ReadMe Generator- JQuery / NodeJS</ol>
               <ol>Password Generator- HTML / Javascript</ol>
               <ol>
-                Sunshine Places Recommendation App- Javascript / HTML /
+                Sunshine Places Recommendation App- Javascript / HTML / 0
                 Bootstrap / API
               </ol>
               <br></br>
             </li>
-          </section>
+          </section> */}
+          {/* //?Local Section -------------END---------- */}
         </div>
         <div className="flex flex-wrap -m-4">
           {projects.map(project => (

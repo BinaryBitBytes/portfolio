@@ -23,7 +23,7 @@ class ShareRuntimeModule extends RuntimeModule {
 	}
 
 	/**
-	 * @returns {string} runtime code
+	 * @returns {string | null} runtime code
 	 */
 	generate() {
 		const compilation = /** @type {Compilation} */ (this.compilation);
@@ -89,7 +89,7 @@ class ShareRuntimeModule extends RuntimeModule {
 							? runtimeTemplate.basicFunction("", "")
 							: runtimeTemplate.basicFunction("msg", [
 									'if (typeof console !== "undefined" && console.warn) console.warn(msg);'
-							  ])
+								])
 					};`,
 					`var uniqueName = ${JSON.stringify(uniqueName || undefined)};`,
 					`var register = ${runtimeTemplate.basicFunction(

@@ -1,4 +1,5 @@
 import React from 'react';
+import ContactMe from './Elements/Contact/contactME';
 function Contact() {
   const { name, setName } = React.useState('');
   const { email, setEmail } = React.useState('');
@@ -36,7 +37,8 @@ function Contact() {
             style={{ filter: 'opacity(0.6' }}
             src="https://www.google.com/maps/embed/v1/place?q=Newnan,+GA+30265,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
           />
-          <div className="bg-gray-900 relative flex flex-initial py-7 px-7 rounded shadow-md">
+          <ContactMe />
+          {/* <div className="bg-gray-900 relative flex flex-initial py-7 px-7 rounded shadow-md">
             <div className="lg:w-1/2 px-6">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 ADDRESS
@@ -62,7 +64,7 @@ function Contact() {
                 678-675-6882
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
         <form
           netlify

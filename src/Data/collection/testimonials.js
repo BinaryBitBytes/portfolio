@@ -6,6 +6,6 @@ export const testimonials = [
       'You will get there eventually, just put one foot in front of another and dont let anything strp you along the way.',
     image: code,
     name: 'Miles C. - My Testimonial',
-    company: 'Apex Aerospace LLC.',
+    company: 'Freelancer',
   },
 ];
