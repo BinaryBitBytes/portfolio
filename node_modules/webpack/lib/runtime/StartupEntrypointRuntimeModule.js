@@ -20,7 +20,7 @@ class StartupEntrypointRuntimeModule extends RuntimeModule {
 	}
 
 	/**
-	 * @returns {string} runtime code
+	 * @returns {string | null} runtime code
 	 */
 	generate() {
 		const compilation = /** @type {Compilation} */ (this.compilation);
@@ -41,12 +41,12 @@ class StartupEntrypointRuntimeModule extends RuntimeModule {
 							"var r = fn();",
 							"return r === undefined ? result : r;"
 						])})`
-				  ]
+					]
 				: [
 						`chunkIds.map(${RuntimeGlobals.ensureChunk}, ${RuntimeGlobals.require})`,
 						"var r = fn();",
 						"return r === undefined ? result : r;"
-				  ])
+					])
 		])}`;
 	}
 }

@@ -22,7 +22,7 @@ class ChunkPrefetchStartupRuntimeModule extends RuntimeModule {
 	}
 
 	/**
-	 * @returns {string} runtime code
+	 * @returns {string | null} runtime code
 	 */
 	generate() {
 		const { startupChunks } = this;
@@ -42,10 +42,10 @@ class ChunkPrefetchStartupRuntimeModule extends RuntimeModule {
 									chunks,
 									c =>
 										`${RuntimeGlobals.prefetchChunk}(${JSON.stringify(c.id)});`
-							  )
+								)
 							: `${JSON.stringify(Array.from(chunks, c => c.id))}.map(${
 									RuntimeGlobals.prefetchChunk
-							  });`
+								});`
 					)}, 5);`
 			)
 		);
