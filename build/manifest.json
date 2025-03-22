@@ -4,17 +4,17 @@
   "icons": [
     {
       "src": "./PQuiggle.gif",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "sizes": "512x512 192X192 64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
-      "type": "image/png",
+      "src": "./PQuiggle.gif",
+      "type": "image/gif",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
-      "type": "image/png",
+      "src": "./PQuiggle.gif",
+      "type": "image/gif",
       "sizes": "512x512"
     }
   ],
