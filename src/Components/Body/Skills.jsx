@@ -22,7 +22,7 @@ function Skills() {
           </div>
           <div className="flex grid gap-4 grid-cols-4 grid-rows 6 flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
             {skills.map((skills) => (
-              <div key={skills} className="p-1 sm:w-full w-full">
+              <div key={skills} className="p-2 sm:w-full w-full">
                 <div className="bg-gray-800 rounded flex p-4 h-full items-center">
                   <BadgeCheckIcon className="text-green-400 w-6 h-6 flex-shrink-0 mr-4" />
                   <span className="title-font font-medium text-white">
