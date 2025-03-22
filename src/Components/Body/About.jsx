@@ -1,7 +1,7 @@
-import React from 'react';
-import WHOamI from './Elements/About/whoAmI';
-import Welcome from './Elements/About/welcome';
-import MyContact from './Elements/About/MyContact';
+import React from "react";
+import WHOamI from "./Elements/About/whoAmI";
+import Welcome from "./Elements/About/welcome";
+import MyContact from "./Elements/About/MyContact";
 let WelcomeElement = Welcome;
 let WHOamIELEMENT = WHOamI;
 function About() {
@@ -14,7 +14,7 @@ function About() {
       >
         {/* <div className='center-content flex items-center lg:flex-grow md:q-1/2 lg:pr-44 md:pr-16 flex flex-col md:items-start md:text-center mb-16 md:mb-0 items-center text-center'> */}
         <div className="center-content items-center">
-          <div className=" box-border container rounded-full border-4 box-border h-12 w-55 border-indigo-800 mx-auto py-0 mb-16">
+          <div className="container rounded-full border-4 box-border h-12 w-55 border-indigo-800 mx-auto py-0 mb-16">
             <WelcomeElement />
             {/* <div
               id="box-content flex py-4 title-font sm:text-4x1 text 3x1 md-1 font-medium"
