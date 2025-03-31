@@ -1,3 +1,4 @@
+import { ContactInfo } from "../../../../Data/collection/contactInfo";
 function MyContact() {
   return (
     <div className="place-content-end h-72 content-between-20 ">
@@ -10,11 +11,13 @@ function MyContact() {
             <strong>
               Looking 4 Work
               <br />
-              Email:117mwc117@gmail.com
+              Email: {ContactInfo.email}
               <br />
-              Phone: 678-675-6882
+              Phone: {ContactInfo.phone}
               <br />
-              LinkedIn.com/BinaryBitBytes
+              LinkedIn: {ContactInfo.linkedIn}
+              <br />
+              GitHub: {ContactInfo.github}
             </strong>
           </p>
         </a>
