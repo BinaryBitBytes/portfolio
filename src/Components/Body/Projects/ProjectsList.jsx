@@ -6,7 +6,7 @@ function ProjectsList() {
       </h1>
       <section className="lg:w-2/3 mx-auto leading-relaxed text-base">
         The apps I built are as follows:
-        <li className="border-2 border-indigo-600">
+        <div className="border-2 border-indigo-600">
           <ol>ReadMe Generator- JQuery / NodeJS</ol>
           <ol>Password Generator- HTML / Javascript</ol>
           <ol>
@@ -14,7 +14,7 @@ function ProjectsList() {
             / API
           </ol>
           <br></br>
-        </li>
+        </div>
       </section>
     </>
   );
