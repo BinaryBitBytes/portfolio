@@ -7,6 +7,7 @@
     "node": "v20.11.0"
   },
   "dependencies": {
+    "@apideck/better-ajv-errors": "^0.3.6",
     "@heroicons/react": "^1.0.6",
     "@tailwindcss/typography": "^3.3.2",
     "@testing-library/jest-dom": "^5.16.5",
