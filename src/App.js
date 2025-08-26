@@ -20,7 +20,6 @@ import {
 import { default as Navbar } from "../src/frontend/layouts/Navbar.jsx";
 // import Navbar from "./components/Header/Navbar.jsx";
 import "./input.css";
-import "./App.css";
 function App() {
   return (
     <main>
