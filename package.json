@@ -17,10 +17,10 @@
     "ajv": "^8.17.1",
     "concurrently": "^9.2.0",
     "express": "^4.18.2",
+    "lodash": "^4.17.21",
     "open": "^9.1.0",
     "path": "^0.12.7",
     "portfolio": "file:",
-    "postcss": "^8.5.6",
     "prop-types": "^15.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -50,7 +50,8 @@
     "build:staging": "REACT_APP_ENV=staging react-scripts build",
     "build:production": "REACT_APP_ENV=production react-scripts build",
     "serve": "serve -s build",
-    "startLint": "npm run lint && npm run start --concurrently"
+    "startLint": "npm run lint && npm run start --concurrently",
+    "watchTailwind": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
   },
   "eslintConfig": {
     "extends": [
@@ -67,7 +68,8 @@
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
-      "last 1 safari version"
+      "last 1 safari version",
+      "last 1 ie version"
     ]
   },
   "devDependencies": {
@@ -75,7 +77,10 @@
     "@tailwindcss/typography": "^0.5.16",
     "@types/babel__core": "^7.20.5",
     "autoprefixer": "^10.4.21",
+    "cross-env": "^10.0.0",
     "gh-pages": "^6.0.0",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
     "postcss-nested": "^7.0.2",
     "prettier": "^3.5.3",
     "serve": "^14.2.4",

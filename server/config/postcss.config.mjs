@@ -1,7 +1,8 @@
+import autoprefixer from "autoprefixer";
 module.exports = {
   plugins: {
+    autoprefixer: autoprefixer,
     "@tailwindcss/postcss": {},
-    autoprefixer: {},
     "postcss-nested": {}, // Uncomment and enable if you need nested CSS syntax support
   },
 };

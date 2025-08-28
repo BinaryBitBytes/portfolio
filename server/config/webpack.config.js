@@ -17,6 +17,10 @@ module.exports = {
           {
             loader: "postcss-loader",
           },
+          {
+            test: /\.jsx?$/,
+            use: ["babel-loader", "astroturf/loader"],
+          },
         ],
       },
     ],

@@ -1,15 +1,4 @@
-// //! ./src/pages
-// import { About, Contact, Skills, Testimonials, Projects } from "../src/pages/";
-// // import About from "./components/Body/About.jsx";
-// // import Contact from "./components/Body/Contact.jsx";
-// // import Skills from "./components/Body/Skills.jsx";
-// //! ./src/Home
-// // import Testimonials from "../src/";
-// // import Testimonials from "./components/Body/Testimonials.jsx";
-// //! ./src/Projects
-// // import Projects from "./components/Body/Projects/Projects.jsx";
-// // import Projects from "./components/Body/Projects/Projects.jsx";
-// //! ./src/layouts
+// import { react } from "react";
 import {
   About,
   Contact,
@@ -20,10 +9,11 @@ import {
 import { default as Navbar } from "../src/frontend/layouts/Navbar.jsx";
 // import Navbar from "./components/Header/Navbar.jsx";
 import "./input.css";
+
 function App() {
   return (
     <main>
-      <Navbar className="text-gray-400 bg-green-900 body-font" />
+      <Navbar />
       <About />
       <Projects />
       <Skills />

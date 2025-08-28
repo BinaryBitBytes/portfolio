@@ -28,9 +28,9 @@
     "traceResolution": true,
     "esModuleInterop": true,
     "paths": {
-      "*": ["src/*"]
+      "*": ["../../src/*"]
     },
-    "rootDirs": ["../src", "../src/backend", "../src/frontend"]
+    "rootDirs": ["../../src", "../../src/backend", "../../src/frontend"]
   },
   "files": ["../server.js"],
   "include": ["../../src/**/*"],
