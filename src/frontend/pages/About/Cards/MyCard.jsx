@@ -3,7 +3,7 @@ import { ContactInfo } from "../../../../backend/assets/data/collection/ContactI
 
 function MyCard() {
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center flex-col items-center p-7 rounded-2xl">
       <a
         href="#contact"
         className="text-center reletive max-h-fit max-w-fit absolute bottom-18 left-10 text-white bg-green-500 border-3 focus:outline-none hover:bg-green-600 rounded text-base"
