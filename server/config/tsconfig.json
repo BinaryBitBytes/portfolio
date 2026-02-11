@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "outDir": "../../client/ts",
+    "checkJs": false,
+    "allowUnreachableCode": false,
+    "declaration": true,
+    "declarationDir": "../dist",
+    "declarationMap": true,
+    "extendedDiagnostics": true,
+    "explainFiles": true,
+    "listFiles": true,
+    "types": ["@babel/core"],
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "sourceRoot": "../../client/debug",
+    "target": "esnext",
+    "module": "esnext",
+    "noEmit": true,
+    "baseUrl": "./",
+    "lib": ["ESNext", "ES2024", "ES2023"],
+    "jsx": "react",
+    "strict": true,
+    "traceResolution": true,
+    "esModuleInterop": true,
+    "paths": {
+      "*": ["../../src/*"]
+    },
+    "rootDirs": ["../../src", "../../src/backend", "../../src/frontend"]
+  },
+  "files": ["../server.js"],
+  "include": ["../../src/**/*"],
+  "exclude": ["node_modules", "build", "test"]
+}

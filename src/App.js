@@ -1,17 +1,19 @@
-import React from 'react';
-import About from './Components/Body/About.jsx';
-import Contact from './Components/Body/Contact.jsx';
-import Navbar from './Components/Header/Navbar.jsx';
-import Projects from './Components/Body/Projects/Projects.jsx';
-import Skills from './Components/Body/Skills.jsx';
-import Testimonials from './Components/Body/Testimonials.jsx';
-import '../src/input.css';
-import './App.css';
+// import { react } from "react";
+import {
+  About,
+  Contact,
+  Skills,
+  Testimonials,
+  Projects,
+} from "./frontend/pages/indexPagesBarrel.js";
+import { default as Navbar } from "../src/frontend/layouts/Navbar.jsx";
+// import Navbar from "./components/Header/Navbar.jsx";
+import "./input.css";
 
 function App() {
   return (
     <main>
-      <Navbar className="text-gray-400 bg-green-900 body-font" />
+      <Navbar />
       <About />
       <Projects />
       <Skills />
